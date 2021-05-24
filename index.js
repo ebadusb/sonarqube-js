@@ -10,7 +10,7 @@ const scan = async () => {
     } 
     
     if (option === 'stop'){
-        await exec.exec('./.github/actions/sonarqube/stop-sonarqube.ps1');
+        await exec.exec('/home/runner/work/_actions/ebadusb/sonarqube-js/stop-sonarqube.ps1');
     }
 
 }
