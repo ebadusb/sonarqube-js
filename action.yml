@@ -1,0 +1,15 @@
+name: 'SonarQube'
+description: 'Run dotnet scans'
+inputs:
+  option:  
+    description: 'start or stop dotnet scan'
+    required: true
+    default: 'start' 
+    
+outputs:
+  sonarqube-report:
+    description: "SonarQube Report"
+    value: "Report"
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
